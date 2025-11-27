@@ -1,0 +1,77 @@
+[
+  {
+    "id": 1,
+    "nom": "Descamps",
+    "prénom": "Jérémy",
+    "poste": "Ingénieur cloud",
+    "études": "Bac+2, école DTS",
+    "tâches": "aide les entreprises qui n'ont pas le temps de projet AIT",
+    "utiliseIA": "ChatGPT (à quotidien et des confirmation)",
+    "avantages": [
+      "Autonomie",
+      "Responsabilité",
+      "Bon revenu"
+    ],
+    "inconvénients": [
+      "Ne savoir pas savoir s'arrêter (d'un besoin)"
+    ],
+    "genre": "homme"
+  },
+  {
+    "id": 2,
+    "nom": "Martin",
+    "prénom": "Sophie",
+    "poste": "Développeuse Full Stack",
+    "études": "Master Informatique",
+    "tâches": "Développe des applications web modernes",
+    "utiliseIA": "GitHub Copilot, ChatGPT",
+    "avantages": [
+      "Flexibilité horaire",
+      "Télétravail possible",
+      "Apprentissage continu"
+    ],
+    "inconvénients": [
+      "Charge mentale élevée",
+      "Stress des deadlines"
+    ],
+    "genre": "femme"
+  },
+  {
+    "id": 3,
+    "nom": "Dubois",
+    "prénom": "Marc",
+    "poste": "Architecte Système",
+    "études": "Ingénieur Télécom",
+    "tâches": "Conçoit les infrastructures cloud pour les grandes entreprises",
+    "utiliseIA": "ChatGPT pour la documentation",
+    "avantages": [
+      "Expertise reconnue",
+      "Salaire attractif",
+      "Projets variés"
+    ],
+    "inconvénients": [
+      "Disponibilité requise 24/7",
+      "Décisions critiques stressantes"
+    ],
+    "genre": "homme"
+  },
+  {
+    "id": 4,
+    "nom": "Dubois",
+    "prénom": "Marc",
+    "poste": "Architecte Système",
+    "études": "Ingénieur Télécom",
+    "tâches": "Conçoit les infrastructures cloud pour les grandes entreprises",
+    "utiliseIA": "ChatGPT pour la documentation",
+    "avantages": [
+      "Expertise reconnue",
+      "Salaire attractif",
+      "Projets variés"
+    ],
+    "inconvénients": [
+      "Disponibilité requise 24/7",
+      "Décisions critiques stressantes"
+    ],
+    "genre": "homme"
+  }
+]

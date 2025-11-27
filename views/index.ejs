@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartes Profil</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Nos Professionnels</h1>
+        
+        <div class="cards-grid">
+            <% profiles.forEach(profile => { %>
+                <div class="card">
+                    <!-- En-tête avec avatar et info basique -->
+                    <div class="card-header">
+                        <img src="<%= profile.avatarUrl %>" alt="<%= profile.prénom %> <%= profile.nom %>" class="avatar">
+                        <div class="header-info">
+                            <h2 class="name"><%= profile.prénom %> <%= profile.nom %></h2>
+                            <p class="position"><%= profile.poste %></p>
+                        </div>
+                    </div>
+
+                    <!-- Section études et tâches -->
+                    <div class="card-section">
+                        <p class="label">Études :</p>
+                        <p class="text"><%= profile.études %></p>
+                    </div>
+
+                    <div class="card-section">
+                        <p class="label">Tâches :</p>
+                        <p class="text"><%= profile.tâches %></p>
+                    </div>
+
+                    <div class="card-section">
+                        <p class="label">Utilise IA :</p>
+                        <p class="text"><%= profile.utiliseIA %></p>
+                    </div>
+
+                    <!-- Section avantages et inconvénients -->
+                    <div class="card-benefits">
+                        <div class="benefits-column">
+                            <h3 class="benefits-title">Avantages</h3>
+                            <ul class="benefits-list">
+                                <% profile.avantages.forEach(avantage => { %>
+                                    <li><%= avantage %></li>
+                                <% }); %>
+                            </ul>
+                        </div>
+
+                        <div class="benefits-column">
+                            <h3 class="benefits-title">Inconvénient</h3>
+                            <ul class="benefits-list inconvenient">
+                                <% profile.inconvénients.forEach(inconvenient => { %>
+                                    <li><%= inconvenient %></li>
+                                <% }); %>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            <% }); %>
+        </div>
+    </div>
+</body>
+</html>
