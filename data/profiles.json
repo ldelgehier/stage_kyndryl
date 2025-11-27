@@ -1,10 +1,10 @@
 [
   {
     "id": 1,
-    "nom": "Descamps",
+    "nom": "D.",
     "prénom": "Jérémy",
     "poste": "Ingénieur cloud",
-    "études": "Bac+2, école DTS",
+    "études": "Bac+2, école BTS",
     "tâches": "aide les entreprises qui n'ont pas le temps de projet AIT",
     "utiliseIA": "ChatGPT (à quotidien et des confirmation)",
     "avantages": [
@@ -19,58 +19,123 @@
   },
   {
     "id": 2,
-    "nom": "Martin",
-    "prénom": "Sophie",
-    "poste": "Développeuse Full Stack",
-    "études": "Master Informatique",
-    "tâches": "Développe des applications web modernes",
-    "utiliseIA": "GitHub Copilot, ChatGPT",
+    "nom": "F.",
+    "prénom": "Frédéric",
+    "poste": "Infrastructeur spécialiste",
+    "études": "Bac math",
+    "tâches": "Trier les infrastructures",
+    "utiliseIA": "Teams (pour résumer les réunions/mails)",
     "avantages": [
-      "Flexibilité horaire",
-      "Télétravail possible",
-      "Apprentissage continu"
+      "Télétravail",
+      "Se remettre en question"
     ],
     "inconvénients": [
-      "Charge mentale élevée",
-      "Stress des deadlines"
+      "Aucun"
     ],
-    "genre": "femme"
+    "genre": "homme"
   },
   {
     "id": 3,
-    "nom": "Dubois",
-    "prénom": "Marc",
-    "poste": "Architecte Système",
-    "études": "Ingénieur Télécom",
-    "tâches": "Conçoit les infrastructures cloud pour les grandes entreprises",
-    "utiliseIA": "ChatGPT pour la documentation",
+    "nom": "U.",
+    "prénom": "Jérémy",
+    "poste": "Architecte technique",
+    "études": "Bac STI2D, bac technologique",
+    "tâches": "Répondre aux besoin du client",
+    "utiliseIA": "Copilot (pour reformuler des codes)",
     "avantages": [
-      "Expertise reconnue",
-      "Salaire attractif",
-      "Projets variés"
+      "Autonomie",
+      "Ce n'est pas un métier rude (physiques)"
     ],
     "inconvénients": [
-      "Disponibilité requise 24/7",
-      "Décisions critiques stressantes"
+      "Trop statiques"
     ],
     "genre": "homme"
   },
   {
     "id": 4,
-    "nom": "Dubois",
-    "prénom": "Marc",
-    "poste": "Architecte Système",
-    "études": "Ingénieur Télécom",
-    "tâches": "Conçoit les infrastructures cloud pour les grandes entreprises",
-    "utiliseIA": "ChatGPT pour la documentation",
+    "nom": "S.",
+    "prénom": "Agnieszka",
+    "poste": "Responsable des conformités",
+    "études": "Master aménagement de territoire",
+    "tâches": "Veillez sur les règles de sécurité soit respectées",
+    "utiliseIA": "ChatGPT (pour des phrases plus claires)",
     "avantages": [
-      "Expertise reconnue",
-      "Salaire attractif",
-      "Projets variés"
+      "Contacts d'équipes",
+      "Travail intéressant"
     ],
     "inconvénients": [
-      "Disponibilité requise 24/7",
-      "Décisions critiques stressantes"
+      "Nouvelle qui ne sont pas à jour"
+    ],
+    "genre": "femme"
+  },
+  {
+    "id": 5,
+    "nom": "D.",
+    "prénom": "Cédric",
+    "poste": "Analiste développeur",
+    "études": "Bac S, reconvertion vers le cobol",
+    "tâches": "Développé des nouvelles applications/fonctionnalités et corriger les bugs",
+    "utiliseIA": "Copilot (recherche spécifique pour le métier)",
+    "avantages": [
+      "Télétravail",
+      "Condition de travail agréable",
+      "Convivialité"
+    ],
+    "inconvénients": [
+      "Trouver une nouvelle activité",
+      "Nouvelle qui ne sont pas à jour"
+    ],
+    "genre": "homme"
+  },
+  {
+    "id": 6,
+    "nom": "O.",
+    "prénom": "Francesco",
+    "poste": "Ingénieur devops",
+    "études": "Bac STMG, école ingénieur",
+    "tâches": "Aider le client à développer/maintenir sont infra",
+    "utiliseIA": "ChatGPT (documentation/exemple de code)",
+    "avantages": [
+      "Télétravail",
+      "Ne pas faire tout le temps la même chose"
+    ],
+    "inconvénients": [
+      "On choisi c'est missions",
+      "Stress"
+    ],
+    "genre": "homme"
+  },
+  {
+    "id": 7,
+    "nom": "C.",
+    "prénom": "Tristan",
+    "poste": "Architecte (identité Microsoft)",
+    "études": "BEP électronique, Bac pro MRIM",
+    "tâches": "Créer une liste de besoin et répondre à ces problèbles",
+    "utiliseIA": "Copilot (résumé des documents), ChatGPT (pour résoudre des problèmes)",
+    "avantages": [
+      "Responsable de comment faire le travail"
+    ],
+    "inconvénients": [
+      "Toujours devant un écran (perdre le côté réel du travail)"
+    ],
+    "genre": "homme"
+  },
+  {
+    "id": 8,
+    "nom": "J.",
+    "prénom": "Luc",
+    "poste": "Développeur",
+    "études": "Bac+2",
+    "tâches": "Faire du code/test er résoudre les bugs",
+    "utiliseIA": "Non",
+    "avantages": [
+      "Marché de l'emploi",
+      "Évolution possible (changer de poste)",
+      "Salaire bien payé"
+    ],
+    "inconvénients": [
+      "Nouvelle qui ne sont pas à jour"
     ],
     "genre": "homme"
   }

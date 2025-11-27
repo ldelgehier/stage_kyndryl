@@ -17,9 +17,14 @@ const profiles = JSON.parse(fs.readFileSync(profilesPath, 'utf-8'));
 // Fonction pour générer l'URL de l'avatar avec DiceBear API
 function getAvatarUrl(profile) {
   const seed = `${profile.prénom}-${profile.nom}`;
-  const style = 'notionists'; // Style notionists - plus professionnel
-  // DiceBear API avec style notionists
-  return `https://api.dicebear.com/7.x/${style}/svg?seed=${encodeURIComponent(seed)}&scale=80`;
+  // Utiliser un style selon le genre
+  if (profile.genre === 'femme') {
+    // avataaars pour les femmes avec peau blanche
+    return `https://api.dicebear.com/7.x/avataaars/svg?seed=${encodeURIComponent(seed)}&scale=80&skinColor=fdbcb4`;
+  } else {
+    // micah pour les hommes - plus réaliste avec différentes représentations
+    return `https://api.dicebear.com/7.x/micah/svg?seed=${encodeURIComponent(seed)}&scale=80`;
+  }
 }
 
 // Route principale
