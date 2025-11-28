@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organigramme Kyndryl</title>
+    <link rel="stylesheet" href="/organigramme.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title"><%= organigramme.titre %></h1>
+        
+        <div class="organigramme">
+            <!-- Flèche gauche "DIRIGEANTS" -->
+            <div class="dirigeants-arrow">
+                <span>DIRIGEANTS</span>
+            </div>
+
+            <!-- Niveau 1: Président -->
+            <div class="niveau niveau-1">
+                <% organigramme.niveaux[0].membres.forEach(membre => { %>
+                    <div class="box" style="background-color: <%= organigramme.niveaux[0].couleur %>;">
+                        <div class="box-name"><%= membre.nom %></div>
+                        <div class="box-poste"><%= membre.poste %></div>
+                    </div>
+                <% }); %>
+            </div>
+
+            <div class="connector"></div>
+
+            <!-- Niveau 2: Vice-Président -->
+            <div class="niveau niveau-2">
+                <% organigramme.niveaux[1].membres.forEach(membre => { %>
+                    <div class="box" style="background-color: <%= organigramme.niveaux[1].couleur %>;">
+                        <div class="box-name"><%= membre.nom %></div>
+                        <div class="box-poste"><%= membre.poste %></div>
+                    </div>
+                <% }); %>
+            </div>
+
+            <div class="connector"></div>
+
+            <!-- Niveau 3: Chef de Département -->
+            <div class="niveau niveau-3">
+                <% organigramme.niveaux[2].membres.forEach(membre => { %>
+                    <div class="box" style="background-color: <%= organigramme.niveaux[2].couleur %>;">
+                        <div class="box-name"><%= membre.nom %></div>
+                        <div class="box-poste"><%= membre.poste %></div>
+                    </div>
+                <% }); %>
+            </div>
+
+            <div class="connector"></div>
+
+            <!-- Niveau 4: Leader -->
+            <div class="niveau niveau-4">
+                <% organigramme.niveaux[3].membres.forEach(membre => { %>
+                    <div class="box" style="background-color: <%= organigramme.niveaux[3].couleur %>;">
+                        <div class="box-name"><%= membre.nom %></div>
+                        <div class="box-poste"><%= membre.poste %></div>
+                    </div>
+                <% }); %>
+            </div>
+
+            <div class="connector"></div>
+
+            <!-- Niveau 5: Équipes -->
+            <div class="niveau niveau-5">
+                <% organigramme.niveaux[4].membres.forEach(membre => { %>
+                    <div class="box" style="background-color: <%= membre.couleur %>;">
+                        <div class="box-name"><%= membre.nom %></div>
+                        <div class="box-poste"><%= membre.poste %></div>
+                    </div>
+                <% }); %>
+            </div>
+        </div>
+
+        <div class="nav-buttons">
+            <a href="/" class="btn">← Retour aux Profils</a>
+        </div>
+    </div>
+</body>
+</html>

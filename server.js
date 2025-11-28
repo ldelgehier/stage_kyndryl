@@ -38,6 +38,14 @@ app.get('/', (req, res) => {
   res.render('index', { profiles: profilesWithAvatars });
 });
 
+// Route organigramme
+app.get('/organigramme', (req, res) => {
+  const organigrammePath = path.join(__dirname, 'data', 'organigramme.json');
+  const organigramme = JSON.parse(fs.readFileSync(organigrammePath, 'utf-8'));
+  
+  res.render('organigramme', { organigramme });
+});
+
 // Démarrer le serveur
 app.listen(PORT, () => {
   console.log(`✅ Serveur lancé sur http://localhost:${PORT}`);

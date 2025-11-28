@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background: #ffffff;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+/* Organigramme */
+.organigramme {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  margin-bottom: 40px;
+}
+
+/* Flèche DIRIGEANTS */
+.dirigeants-arrow {
+  position: relative;
+  width: 80px;
+  height: 200px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.dirigeants-arrow::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: #F4A460;
+  transform: translateX(-50%);
+}
+
+.dirigeants-arrow::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #F4A460;
+  transform: translateX(-50%);
+}
+
+.dirigeants-arrow span {
+  position: absolute;
+  left: -60px;
+  top: 50%;
+  transform: translateY(-50%) rotate(-90deg);
+  font-weight: 700;
+  color: #F4A460;
+  white-space: nowrap;
+  font-size: 0.9rem;
+}
+
+/* Niveaux */
+.niveau {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+/* Boîtes */
+.box {
+  min-width: 200px;
+  padding: 15px 20px;
+  border: 2px solid #333;
+  border-radius: 4px;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.box-name {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.box-poste {
+  font-size: 0.9rem;
+  font-weight: 500;
+  opacity: 0.95;
+}
+
+/* Connecteurs verticaux */
+.connector {
+  width: 4px;
+  height: 30px;
+  background: #333;
+  margin: 0;
+}
+
+/* Navigation */
+.nav-buttons {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(102, 126, 234, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .niveau {
+    gap: 15px;
+  }
+
+  .box {
+    min-width: 150px;
+    padding: 12px 15px;
+    font-size: 0.85rem;
+  }
+
+  .box-name {
+    font-size: 0.9rem;
+  }
+
+  .box-poste {
+    font-size: 0.8rem;
+  }
+
+  .dirigeants-arrow {
+    width: 60px;
+    height: 150px;
+  }
+
+  .dirigeants-arrow span {
+    font-size: 0.75rem;
+  }
+}

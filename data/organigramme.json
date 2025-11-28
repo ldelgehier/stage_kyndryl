@@ -1,0 +1,72 @@
+{
+  "titre": "Organigramme Kyndryl France",
+  "niveaux": [
+    {
+      "niveau": 1,
+      "titre": "DIRIGEANTS",
+      "couleur": "#8B0000",
+      "membres": [
+        {
+          "id": 1,
+          "nom": "Jérémy C.",
+          "poste": "Président France"
+        }
+      ]
+    },
+    {
+      "niveau": 2,
+      "titre": "",
+      "couleur": "#8B0000",
+      "membres": [
+        {
+          "id": 2,
+          "nom": "David T.",
+          "poste": "Vice-Président France"
+        }
+      ]
+    },
+    {
+      "niveau": 3,
+      "titre": "",
+      "couleur": "#8B0000",
+      "membres": [
+        {
+          "id": 3,
+          "nom": "Habib M.",
+          "poste": "Chef de Département"
+        }
+      ]
+    },
+    {
+      "niveau": 4,
+      "titre": "",
+      "couleur": "#8B0000",
+      "membres": [
+        {
+          "id": 4,
+          "nom": "Yvon D.",
+          "poste": "Leader pour le Cloud"
+        }
+      ]
+    },
+    {
+      "niveau": 5,
+      "titre": "",
+      "couleur": "mixed",
+      "membres": [
+        {
+          "id": 5,
+          "nom": "Stéphanie M.",
+          "poste": "Responsable d'équipe",
+          "couleur": "#F4A460"
+        },
+        {
+          "id": 6,
+          "nom": "Lucas D.",
+          "poste": "Stagiaire",
+          "couleur": "#4169E1"
+        }
+      ]
+    }
+  ]
+}
