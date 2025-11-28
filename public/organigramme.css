@@ -159,7 +159,7 @@ body {
   gap: 0;
 }
 
-/* Boîtes */
+/* Boxes with gradient effects */
 .box {
   min-width: 200px;
   padding: 20px;
@@ -168,7 +168,10 @@ body {
   text-align: center;
   color: white;
   font-weight: 600;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   position: relative;
   overflow: hidden;
@@ -181,9 +184,16 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.25) 0%,
+    rgba(255, 255, 255, 0.1) 30%,
+    transparent 50%,
+    rgba(0, 0, 0, 0.1) 70%,
+    rgba(0, 0, 0, 0.25) 100%
+  );
   pointer-events: none;
-  z-index: 0;
+  z-index: 1;
 }
 
 .box::after {
@@ -192,21 +202,37 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.6), transparent);
-  opacity: 0.8;
-  z-index: 1;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.9), transparent);
+  opacity: 1;
+  z-index: 2;
+  box-shadow: 0 1px 3px rgba(255, 255, 255, 0.3);
 }
 
 .box-name,
 .box-poste {
   position: relative;
-  z-index: 2;
+  z-index: 3;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .box:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.12);
+  transform: translateY(-5px) scale(1.02);
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.25),
+    0 8px 15px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+.box:hover::before {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.35) 0%,
+    rgba(255, 255, 255, 0.15) 30%,
+    transparent 50%,
+    rgba(0, 0, 0, 0.15) 70%,
+    rgba(0, 0, 0, 0.3) 100%
+  );
 }
 
 .box-name {
