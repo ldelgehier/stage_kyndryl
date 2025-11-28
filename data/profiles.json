@@ -5,7 +5,7 @@
     "prénom": "Jérémy",
     "poste": "Ingénieur cloud",
     "études": "Bac+2, école BTS",
-    "tâches": "Aide les entreprises qui n'ont pas le temps de projet AIT",
+    "tâches": "Aide les entreprises qui n'ont pas le temps de projet Informatique",
     "utiliseIA": "ChatGPT (au quotidien et des confirmations)",
     "avantages": [
       "Autonomie",
@@ -22,7 +22,7 @@
     "nom": "F.",
     "prénom": "Frédéric",
     "poste": "Infrastructeur spécialiste",
-    "études": "Bac math",
+    "études": "Bac Maths",
     "tâches": "Trier les infrastructures",
     "utiliseIA": "Teams (pour résumer les réunions/mails)",
     "avantages": [
@@ -47,7 +47,7 @@
       "Ce n'est pas un métier rude (physiques)"
     ],
     "inconvénients": [
-      "Trop statiques"
+      "Trop souvent assis devant un écran"
     ],
     "genre": "homme"
   },
@@ -60,11 +60,11 @@
     "tâches": "Veiller sur les règles de sécurité soient respectées",
     "utiliseIA": "ChatGPT (pour des phrases plus claires)",
     "avantages": [
-      "Contacts d'équipes",
+      "Contacts avec les équipes",
       "Travail intéressant"
     ],
     "inconvénients": [
-      "Nouvelle qui ne sont pas à jour"
+      "Les nouvelles évoluent vite et il faut se tenir à jour"
     ],
     "genre": "femme"
   },
@@ -72,7 +72,7 @@
     "id": 5,
     "nom": "D.",
     "prénom": "Cédric",
-    "poste": "Analiste développeur",
+    "poste": "Analyste développeur",
     "études": "Bac S, reconversion vers le COBOL",
     "tâches": "Développer des nouvelles applications/fonctionnalités et corriger les bugs",
     "utiliseIA": "Copilot (recherche spécifique pour le métier)",
@@ -83,7 +83,7 @@
     ],
     "inconvénients": [
       "Trouver une nouvelle activité",
-      "Nouvelle qui ne sont pas à jour"
+      "Les nouvelles évoluent vite et il faut se tenir à jour"
     ],
     "genre": "homme"
   },
@@ -100,7 +100,7 @@
       "Ne pas faire tout le temps la même chose"
     ],
     "inconvénients": [
-      "On choisit ces missions",
+      "On ne choisit pas ces missions",
       "Stress"
     ],
     "genre": "homme"
@@ -135,7 +135,7 @@
       "Salaire bien payé"
     ],
     "inconvénients": [
-      "Nouvelle qui ne sont pas à jour"
+      "Les nouvelles évoluent vite et il faut se tenir à jour"
     ],
     "genre": "homme"
   }

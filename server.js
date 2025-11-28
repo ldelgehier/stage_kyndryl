@@ -17,14 +17,8 @@ const profiles = JSON.parse(fs.readFileSync(profilesPath, 'utf-8'));
 // Generate avatar URL using DiceBear API based on gender
 function getAvatarUrl(profile) {
   const seed = `${profile.prénom}-${profile.nom}`;
-  // Use different style based on gender
-  if (profile.genre === 'femme') {
-    // avataaars for women with white skin tone
-    return `https://api.dicebear.com/7.x/avataaars/svg?seed=${encodeURIComponent(seed)}&scale=80&skinColor=fdbcb4`;
-  } else {
-    // micah for men - more realistic representations
-    return `https://api.dicebear.com/7.x/micah/svg?seed=${encodeURIComponent(seed)}&scale=80`;
-  }
+  // Use avataaars-neutral style for everyone (neutral and professional)
+  return `https://api.dicebear.com/7.x/avataaars-neutral/svg?seed=${encodeURIComponent(seed)}`;
 }
 
 // Darken a hex color by a given percentage for gradient effects
