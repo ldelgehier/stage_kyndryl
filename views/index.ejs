@@ -12,48 +12,40 @@
         
         <div class="cards-grid">
             <% profiles.forEach(profile => { %>
-                <div class="card">
-                    <!-- En-tête avec avatar et info basique -->
-                    <div class="card-header">
-                        <img src="<%= profile.avatarUrl %>" alt="<%= profile.prénom %> <%= profile.nom %>" class="avatar">
-                        <div class="header-info">
-                            <h2 class="name"><%= profile.prénom %> <%= profile.nom %></h2>
-                            <p class="position"><%= profile.poste %></p>
+                <div class="id-card">
+                    <!-- Haut de la carte avec informations principales -->
+                    <div class="id-card-top">
+                        <div class="id-card-left">
+                            <img src="<%= profile.avatarUrl %>" alt="<%= profile.prénom %> <%= profile.nom %>" class="id-avatar">
+                        </div>
+                        <div class="id-card-right">
+                            <h2 class="id-name"><%= profile.prénom %> <%= profile.nom %></h2>
+                            <p class="id-position"><%= profile.poste %></p>
+                            
+                            <div class="id-info">
+                                <p><strong>Études :</strong> <%= profile.études %></p>
+                                <p><strong>Tâches :</strong> <%= profile.tâches %></p>
+                                <p><strong>Utilise IA :</strong> <%= profile.utiliseIA %></p>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Section études et tâches -->
-                    <div class="card-section">
-                        <p class="label">Études :</p>
-                        <p class="text"><%= profile.études %></p>
-                    </div>
-
-                    <div class="card-section">
-                        <p class="label">Tâches :</p>
-                        <p class="text"><%= profile.tâches %></p>
-                    </div>
-
-                    <div class="card-section">
-                        <p class="label">Utilise IA :</p>
-                        <p class="text"><%= profile.utiliseIA %></p>
-                    </div>
-
-                    <!-- Section avantages et inconvénients -->
-                    <div class="card-benefits">
-                        <div class="benefits-column">
-                            <h3 class="benefits-title">Avantages</h3>
-                            <ul class="benefits-list">
+                    <!-- Bas de la carte avec avantages/inconvénients -->
+                    <div class="id-card-bottom">
+                        <div class="id-column advantages">
+                            <h3>Avantages</h3>
+                            <ul>
                                 <% profile.avantages.forEach(avantage => { %>
-                                    <li><%= avantage %></li>
+                                    <li>- <%= avantage %></li>
                                 <% }); %>
                             </ul>
                         </div>
 
-                        <div class="benefits-column">
-                            <h3 class="benefits-title">Inconvénient</h3>
-                            <ul class="benefits-list inconvenient">
+                        <div class="id-column inconvenient">
+                            <h3>Inconvénient</h3>
+                            <ul>
                                 <% profile.inconvénients.forEach(inconvenient => { %>
-                                    <li><%= inconvenient %></li>
+                                    <li>- <%= inconvenient %></li>
                                 <% }); %>
                             </ul>
                         </div>

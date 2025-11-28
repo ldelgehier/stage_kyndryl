@@ -5,8 +5,8 @@
     "prénom": "Jérémy",
     "poste": "Ingénieur cloud",
     "études": "Bac+2, école BTS",
-    "tâches": "aide les entreprises qui n'ont pas le temps de projet AIT",
-    "utiliseIA": "ChatGPT (à quotidien et des confirmation)",
+    "tâches": "Aide les entreprises qui n'ont pas le temps de projet AIT",
+    "utiliseIA": "ChatGPT (au quotidien et des confirmations)",
     "avantages": [
       "Autonomie",
       "Responsabilité",
@@ -40,7 +40,7 @@
     "prénom": "Jérémy",
     "poste": "Architecte technique",
     "études": "Bac STI2D, bac technologique",
-    "tâches": "Répondre aux besoin du client",
+    "tâches": "Répondre aux besoins du client",
     "utiliseIA": "Copilot (pour reformuler des codes)",
     "avantages": [
       "Autonomie",
@@ -57,7 +57,7 @@
     "prénom": "Agnieszka",
     "poste": "Responsable des conformités",
     "études": "Master aménagement de territoire",
-    "tâches": "Veillez sur les règles de sécurité soit respectées",
+    "tâches": "Veiller sur les règles de sécurité soient respectées",
     "utiliseIA": "ChatGPT (pour des phrases plus claires)",
     "avantages": [
       "Contacts d'équipes",
@@ -73,8 +73,8 @@
     "nom": "D.",
     "prénom": "Cédric",
     "poste": "Analiste développeur",
-    "études": "Bac S, reconvertion vers le cobol",
-    "tâches": "Développé des nouvelles applications/fonctionnalités et corriger les bugs",
+    "études": "Bac S, reconversion vers le COBOL",
+    "tâches": "Développer des nouvelles applications/fonctionnalités et corriger les bugs",
     "utiliseIA": "Copilot (recherche spécifique pour le métier)",
     "avantages": [
       "Télétravail",
@@ -93,14 +93,14 @@
     "prénom": "Francesco",
     "poste": "Ingénieur devops",
     "études": "Bac STMG, école ingénieur",
-    "tâches": "Aider le client à développer/maintenir sont infra",
+    "tâches": "Aider le client à développer/maintenir son infra",
     "utiliseIA": "ChatGPT (documentation/exemple de code)",
     "avantages": [
       "Télétravail",
       "Ne pas faire tout le temps la même chose"
     ],
     "inconvénients": [
-      "On choisi c'est missions",
+      "On choisit ces missions",
       "Stress"
     ],
     "genre": "homme"
@@ -111,7 +111,7 @@
     "prénom": "Tristan",
     "poste": "Architecte (identité Microsoft)",
     "études": "BEP électronique, Bac pro MRIM",
-    "tâches": "Créer une liste de besoin et répondre à ces problèbles",
+    "tâches": "Créer une liste de besoins et répondre à ces problèmes",
     "utiliseIA": "Copilot (résumé des documents), ChatGPT (pour résoudre des problèmes)",
     "avantages": [
       "Responsable de comment faire le travail"
@@ -127,7 +127,7 @@
     "prénom": "Luc",
     "poste": "Développeur",
     "études": "Bac+2",
-    "tâches": "Faire du code/test er résoudre les bugs",
+    "tâches": "Faire du code/test et résoudre les bugs",
     "utiliseIA": "Non",
     "avantages": [
       "Marché de l'emploi",

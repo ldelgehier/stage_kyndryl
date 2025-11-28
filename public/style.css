@@ -39,175 +39,147 @@ body {
   }
 }
 
-/* Desktop: 3 colonnes */
+/* Desktop: 1 colonne (cartes larges comme des ID) */
 @media (min-width: 1024px) {
   .cards-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
   }
 }
 
-/* Carte profil */
-.card {
+/* Carte d'identité */
+.id-card {
   background: white;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border: 2px solid #333;
+  border-radius: 8px;
   overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 1px solid #e0e0e0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 280px;
 }
 
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
-}
-
-/* En-tête de la carte */
-.card-header {
+/* Haut de la carte - gauche avec avatar, droite avec infos */
+.id-card-top {
   display: flex;
-  align-items: center;
-  padding: 20px;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  gap: 15px;
+  grid-column: 1 / -1;
+  padding: 20px;
+  gap: 20px;
+  align-items: flex-start;
 }
 
-.avatar {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  border: 3px solid white;
-  object-fit: cover;
+.id-card-left {
   flex-shrink: 0;
 }
 
-.header-info {
+.id-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  border: 3px solid white;
+  object-fit: cover;
+}
+
+.id-card-right {
   flex: 1;
-}
-
-.name {
-  font-size: 1.3rem;
-  font-weight: 600;
   color: white;
+}
+
+.id-name {
+  font-size: 1.6rem;
+  font-weight: 700;
   margin-bottom: 5px;
 }
 
-.position {
-  font-size: 0.95rem;
-  color: rgba(255, 255, 255, 0.9);
+.id-position {
+  font-size: 1rem;
+  opacity: 0.95;
+  margin-bottom: 15px;
+  font-weight: 500;
 }
 
-/* Sections de contenu */
-.card-section {
-  padding: 15px 20px;
-  border-bottom: 1px solid #f0f0f0;
+.id-info {
+  font-size: 0.85rem;
+  line-height: 1.6;
 }
 
-.label {
+.id-info p {
+  margin-bottom: 6px;
+}
+
+.id-info strong {
   font-weight: 600;
-  color: #333;
-  font-size: 0.9rem;
-  margin-bottom: 5px;
 }
 
-.text {
-  color: #666;
-  font-size: 0.95rem;
-  line-height: 1.5;
-}
-
-/* Section avantages/inconvénients */
-.card-benefits {
+/* Bas de la carte avec avantages/inconvénients */
+.id-card-bottom {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-column: 1 / -1;
   gap: 0;
+}
+
+.id-column {
   padding: 20px;
-  background: #f9f9f9;
-  border-top: 2px solid #e0e0e0;
-}
-
-.benefits-column {
   border-right: 1px solid #e0e0e0;
-  padding-right: 15px;
 }
 
-.benefits-column:last-child {
+.id-column:last-child {
   border-right: none;
-  padding-right: 0;
-  padding-left: 15px;
 }
 
-.benefits-title {
+.id-column h3 {
   font-size: 1rem;
   font-weight: 700;
   color: #333;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
-.benefits-list {
+.id-column ul {
   list-style: none;
   padding: 0;
-}
-
-.benefits-list li {
   font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+.id-column li {
   color: #555;
-  margin-bottom: 8px;
-  padding-left: 20px;
-  position: relative;
-  line-height: 1.4;
+  margin-bottom: 6px;
 }
 
-.benefits-list li:before {
-  content: "✓";
-  position: absolute;
-  left: 0;
-  color: #4caf50;
-  font-weight: bold;
-}
-
-.benefits-list.inconvenient li:before {
-  content: "✗";
-  color: #f44336;
-}
-
-/* Mobile - Une seule colonne pour avantages/inconvénients */
-@media (max-width: 600px) {
-  .card-benefits {
+/* Mobile - Stack layout */
+@media (max-width: 767px) {
+  .id-card {
     grid-template-columns: 1fr;
-    gap: 20px;
   }
 
-  .benefits-column {
+  .id-card-top {
+    grid-column: 1;
+  }
+
+  .id-card-bottom {
+    grid-column: 1;
+    grid-template-columns: 1fr;
+  }
+
+  .id-column {
     border-right: none;
-    padding-right: 0;
-    padding-left: 0;
+    border-bottom: 1px solid #e0e0e0;
   }
 
-  .benefits-column:last-child {
-    padding-left: 0;
+  .id-column:last-child {
+    border-bottom: none;
   }
 
-  .title {
-    font-size: 1.8rem;
-  }
-}
-
-/* Très petit écran */
-@media (max-width: 400px) {
-  .card-header {
-    flex-direction: column;
-    text-align: center;
+  .id-name {
+    font-size: 1.4rem;
   }
 
-  .avatar {
-    width: 70px;
-    height: 70px;
+  .id-position {
+    font-size: 0.95rem;
   }
 
-  .name {
-    font-size: 1.1rem;
-  }
-
-  .position {
-    font-size: 0.85rem;
+  .id-info {
+    font-size: 0.8rem;
   }
 }
