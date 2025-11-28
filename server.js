@@ -14,17 +14,27 @@ app.use(express.static(path.join(__dirname, 'public')));
 const profilesPath = path.join(__dirname, 'data', 'profiles.json');
 const profiles = JSON.parse(fs.readFileSync(profilesPath, 'utf-8'));
 
-// Fonction pour générer l'URL de l'avatar avec DiceBear API
+// Generate avatar URL using DiceBear API based on gender
 function getAvatarUrl(profile) {
   const seed = `${profile.prénom}-${profile.nom}`;
-  // Utiliser un style selon le genre
+  // Use different style based on gender
   if (profile.genre === 'femme') {
-    // avataaars pour les femmes avec peau blanche
+    // avataaars for women with white skin tone
     return `https://api.dicebear.com/7.x/avataaars/svg?seed=${encodeURIComponent(seed)}&scale=80&skinColor=fdbcb4`;
   } else {
-    // micah pour les hommes - plus réaliste avec différentes représentations
+    // micah for men - more realistic representations
     return `https://api.dicebear.com/7.x/micah/svg?seed=${encodeURIComponent(seed)}&scale=80`;
   }
+}
+
+// Darken a hex color by a given percentage for gradient effects
+function darkenColor(hex, percent) {
+  hex = hex.replace('#', '');
+  const num = parseInt(hex, 16);
+  const r = Math.max(0, Math.floor((num >> 16) * (1 - percent)));
+  const g = Math.max(0, Math.floor(((num >> 8) & 0x00FF) * (1 - percent)));
+  const b = Math.max(0, Math.floor((num & 0x0000FF) * (1 - percent)));
+  return '#' + ((r << 16) | (g << 8) | b).toString(16).padStart(6, '0');
 }
 
 // Route principale
@@ -42,8 +52,9 @@ app.get('/', (req, res) => {
 app.get('/organigramme', (req, res) => {
   const organigrammePath = path.join(__dirname, 'data', 'organigramme.json');
   const organigramme = JSON.parse(fs.readFileSync(organigrammePath, 'utf-8'));
-  
-  res.render('organigramme', { organigramme });
+
+  // Pass the darkenColor helper function to the template
+  res.render('organigramme', { organigramme, darkenColor });
 });
 
 // Démarrer le serveur

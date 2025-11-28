@@ -17,10 +17,11 @@
                     <!-- Niveau <%= index + 1 %>: <%= niveau.titre %> -->
                     <div class="level">
                         <% if (niveau.couleur === 'mixed') { %>
-                            <!-- Niveau équipes avec couleurs différentes -->
+                            <!-- Team level with different colors -->
                             <div class="team-container">
                                 <% niveau.membres.forEach((membre, membreIndex) => { %>
-                                    <div class="box team-box" style="background: linear-gradient(135deg, <%= membre.couleur %> 0%, <%= membre.couleur %>dd 100%); border: 2px solid #333;">
+                                    <% const darkColor = darkenColor(membre.couleur, 0.3); %>
+                                    <div class="box team-box" style="background: linear-gradient(135deg, <%= membre.couleur %> 0%, <%= darkColor %> 100%) !important;">
                                         <div class="box-name"><%= membre.nom %></div>
                                         <div class="box-poste"><%= membre.poste %></div>
                                     </div>
@@ -30,9 +31,10 @@
                                 <% }); %>
                             </div>
                         <% } else { %>
-                            <!-- Niveaux de direction avec même couleur -->
+                            <!-- Management levels with same color -->
+                            <% const darkColor = darkenColor(niveau.couleur, 0.3); %>
                             <% niveau.membres.forEach(membre => { %>
-                                <div class="box" style="background: linear-gradient(135deg, <%= niveau.couleur %> 0%, <%= niveau.couleur %>cc 100%) !important;">
+                                <div class="box" style="background: linear-gradient(135deg, <%= niveau.couleur %> 0%, <%= darkColor %> 100%) !important;">
                                     <div class="box-name"><%= membre.nom %></div>
                                     <div class="box-poste"><%= membre.poste %></div>
                                 </div>
