@@ -8,7 +8,7 @@
       "membres": [
         {
           "id": 1,
-          "nom": "Jérémy C.",
+          "nom": "Jérôme C.",
           "poste": "Président France"
         }
       ]
@@ -39,7 +39,7 @@
     },
     {
       "niveau": 4,
-      "titre": "",
+      "titre": "DIRIGEANTS",
       "couleur": "#8B0000",
       "membres": [
         {
@@ -52,19 +52,24 @@
     {
       "niveau": 5,
       "titre": "",
-      "couleur": "mixed",
+      "couleur": "#F4A460",
       "membres": [
         {
           "id": 5,
           "nom": "Stéphanie M.",
-          "poste": "Responsable d'équipe",
-          "couleur": "#F4A460"
-        },
+          "poste": "Responsable d'équipe"
+        }
+      ]
+    },
+    {
+      "niveau": 6,
+      "titre": "",
+      "couleur": "#4169E1",
+      "membres": [
         {
           "id": 6,
           "nom": "Lucas D.",
-          "poste": "Stagiaire",
-          "couleur": "#4169E1"
+          "poste": "Stagiaire"
         }
       ]
     }
